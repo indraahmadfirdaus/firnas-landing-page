@@ -1,13 +1,13 @@
-import ComingSoon from "@/components/ComingSoon";
+import About from "@/components/About";
 import Hero from "@/components/Hero";
-import { TypewriterEffectDemo } from "@/components/TypewriterEffect";
-import Image from "next/image";
+import Navbar from "@/components/ui/Navbar";
 
 export default function Home() {
   return (
     <>
-  <TypewriterEffectDemo />
-   <ComingSoon />
+      <Navbar />
+      <Hero />
+      <About />
     </>
 
   );
