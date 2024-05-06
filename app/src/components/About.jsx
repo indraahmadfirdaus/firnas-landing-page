@@ -2,8 +2,8 @@ import React from 'react'
 
 const About = () => {
     return (
-        <div className="hero min-h-[80vh] bg-base-200 bg-[url('../assets/about-img.png')]">
-            <div className='max-w-2xl bg-black p-4 rounded-lg bg-opacity-55'>
+        <div className="hero min-h-[80vh] bg-base-200">
+            <div className='max-w-2xl'>
                 <h1 className="text-3xl lg:text-4xl font-bold text-center tracking-wide">
                     Tentang Firnas Technology School
                 </h1>

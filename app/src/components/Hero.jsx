@@ -5,16 +5,16 @@ import Image from 'next/image'
 const Hero = () => {
   return (
     <>
-      <div className="hero min-h-[80vh] bg-base-200">
+      <div className="hero min-h-[80vh] lg:min-h-screen bg-base-200 bg-[url('../assets/about-img.png')]">
 
           <div>
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center tracking-wide">
               Bangun{" "}
               <span class="inline-block mt-0 rounded-lg font-medium text-blue-800 bg-blue-100 p-1 relative">Keterampilan Digital</span>
               <br />
-              dan Raih Masa Depan Gemilang.
+              dan Raih Karier IT mu Segera.
             </h1>
-            <p className="py-4 text-center">Belajar koding menjadi lebih mudah bersama{" "}
+            <p className="py-4 text-center">Belajar IT menjadi lebih mudah bersama{" "}
             <span className='inline-block mt-0 rounded-lg font-medium text-blue-800 bg-blue-100 p-1 relative'>
             Firnas Tecnology School.
             </span>
