@@ -13,7 +13,7 @@ export default function Home() {
       <Header />
       <Banner />
       <Course />
-      <Testimony />
+      {/* <Testimony /> */}
       <>
         <SubscribeEmail />
         <Footer />

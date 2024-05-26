@@ -16,10 +16,8 @@ export default function Banner() {
 
       <div className="flex flex-col md:w-[380px] md:gap-[35px] w-[90%] gap-2">
         <hr className="border border-2 w-[50px] border-danger" />
-        <p className="text-dark text-4xl font-bold">Make online educa</p>
-        <p className="text-secondary">Problems trying to resolve the conflict between
-          the two major realms of Classical physics:
-          Newtonian mechanics </p>
+        <p className="text-dark text-4xl font-bold">Tentang Firnas Technology School</p>
+        <p className="text-secondary">Firnas Technology School merupakan sekolah yang memiliki format Pusat Kegiatan Belajar Masyarakat (PKBM) non formal yang fokus kepada bidang teknologi digital dan memuat basis keilmuan islami. </p>
         <Link href="/" className="flex gap-[10px] items-center">
           <p className="font-bold text-primary">Learn More</p>
           <Image src="/icons/arrow-next.svg"

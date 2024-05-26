@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
+import Saga from '@/assets/saga.jpeg'
+
 
 export default function Footer() {
   let footerList = [
@@ -36,16 +38,16 @@ export default function Footer() {
       <div className="container md:h-96 flex items-center justify-center py-[50px]">
         <div className="flex justify-between w-full flex-col md:flex-row gap-8 max-w-[90%]">
           <div className="flex flex-col gap-4 md:gap-6 w-60">
-            <p className="text-dark font-bold text-2xl">Get In Touch</p>
-            <p className="text-secondary text-sm">the quick fox jumps over the
-              lazy dog</p>
+            <p className="text-dark font-bold text-2xl">Lokasi Kami</p>
+            <p className="text-secondary text-sm">SAGA Creative Hub,<br /> Komp. Setia Budi Center Blok B - 9, Tj. Rejo, Kec. Medan Sunggal, Kota Medan, Sumatera Utara 20122</p>
             <div className="flex md:gap-5 gap-4">
               <Image className="object-contain h-6 w-6" width="24" height="24" src="./icons/facebook.svg" alt="facebook" />
               <Image className="object-contain h-6 w-6" width="24" height="24" src="./icons/instagram.svg" alt="instagram" />
               <Image className="object-contain h-6 w-6" width="24" height="24" src="./icons/twitter.svg" alt="twitter" />
             </div>
           </div>
-          {
+
+          {/* {
             footerList.map((el, i) => (
               <div key={i} className="flex flex-col gap-4 md:gap-6 w-60">
                 <p className="text-dark font-bold text-2xl">{el.headline}</p>
@@ -56,13 +58,14 @@ export default function Footer() {
                 </div>
               </div>
             ))
-          }
+          } */}
+          <Image src={Saga} height={250} className="rounded-lg"/>
         </div>
 
-
       </div>
+
       <div className="flex justify-center items-center bg-lightgray h-20 w-full">
-        <p className="font-bold text-secondary text-center">Made With Love By Figmaland All Right Reserved</p>
+        <p className="font-bold text-secondary text-center">Firnas Technology School</p>
       </div>
     </section>
   );

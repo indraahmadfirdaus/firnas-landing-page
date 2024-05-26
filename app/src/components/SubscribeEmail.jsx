@@ -2,9 +2,9 @@ export default function SubscribeEmail() {
   return (
     <section id="subscribe" className="flex flex-col md:gap-[80px] gap-10 justify-center items-center bg-[#FFDCD1] md:py-0 py-16">
       <div className="container flex flex-col gap-[10px] max-w-[90%] w-full items-center justify-center">
-        <p className="text-primary font-bold text-center">Practice Advice</p>
-        <p className="text-dark text-4xl font-bold text-center">Featured Products</p>
-        <p className="text-secondary text-center">Problems trying to resolve the conflict between<br />the two major realms of Classical physics: Newtonian mechanics </p>
+        {/* <p className="text-primary font-bold text-center">Practice Advice</p> */}
+        <p className="text-dark text-4xl font-bold text-center">Bergabung di Newsletter Kami</p>
+        <p className="text-secondary text-center">Beberapa update mengenai promo akan kami beritahukan lewat email!</p>
       </div>
       <form className="container flex w-[90%] max-w-[688px]">
         <div className="relative w-full ">
