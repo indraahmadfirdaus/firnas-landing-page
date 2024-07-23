@@ -39,7 +39,7 @@ export default function Footer() {
         <div className="flex justify-between w-full flex-col md:flex-row gap-8 max-w-[90%]">
           <div className="flex flex-col gap-4 md:gap-6 w-60">
             <p className="text-dark font-bold text-2xl">Lokasi Kami</p>
-            <p className="text-secondary text-sm">SAGA Creative Hub,<br /> Komp. Setia Budi Center Blok B - 9, Tj. Rejo, Kec. Medan Sunggal, Kota Medan, Sumatera Utara 20122</p>
+            <p className="text-secondary text-sm">IRA Building,<br /> HJ7Q+J8C, Jl. Cactus Raya, Tj. Rejo, Kec. Medan Sunggal, Kota Medan, Sumatera Utara 20122</p>
             <div className="flex md:gap-5 gap-4">
               <Image className="object-contain h-6 w-6" width="24" height="24" src="./icons/facebook.svg" alt="facebook" />
               <Image className="object-contain h-6 w-6" width="24" height="24" src="./icons/instagram.svg" alt="instagram" />

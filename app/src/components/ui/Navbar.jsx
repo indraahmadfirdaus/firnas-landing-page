@@ -34,9 +34,8 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn btn-primary text-white">
+                <a className="btn btn-primary text-white" href='https://wa.me/6287763817899'>
                     <UserRound />
-
                     Daftar
                 </a>
             </div>
