@@ -3,19 +3,19 @@ import Link from "next/link";
 export default function Course() {
   const data = [
     {
-      image:"/python.png",
+      image:"/py.jpeg",
       title: 'Python Coding Bootcamp',
       header: 'Setiap Sabtu, Jam 09.00 - 12.00',
       description: 'Program untuk semua kalangan yang ingin belajar pemrograman dengan bahasa pyhton.'
     }, 
     {
-      image: "/gd.jpg",
+      image: "/dg.jpeg",
       title: 'Graphic Design',
-      header: 'Setiap Sabtu, Jam 09.00 - 12.00',
+      header: 'Setiap Selasa dan Kamis, Jam 16.00 - 19.00',
       description: 'Belajar memahami dan membuat desain pada produk-produk digital.'
     },
     {
-      image: "/wd.jpg",
+      image: "/wd.jpeg",
       title: 'Web Design',
       header: 'Setiap Jumat, Jam 16.00 - 19.00',
       description: 'Kursus yang dirancang untuk belajar membuat web desain sederhana.'
