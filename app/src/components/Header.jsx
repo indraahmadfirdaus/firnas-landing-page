@@ -62,7 +62,7 @@ export default function Header() {
         <p className="text-dark md:text-[58px] text-4xl font-bold max-w-lg md:leading-[80px] leading-[40px]">Firnas Technology School</p>
         <p className="text-secondary md:text-xl leading-[30px]">Bangun keterampilan digital<br /> dan Raih Karier IT mu segera</p>
         <div className="flex gap-2.5">
-          <a className="bg-primary px-10 py-[15px] rounded" href="https://wa.me/6287763817899">
+          <a className="bg-primary px-10 py-[15px] rounded" href="https://wa.me/6289510380067">
             <p className='text-sm font-bold text-white'>Hubungi Kami</p>
           </a>
           <button className="border border-1 border-primary px-10 py-[15px] rounded">

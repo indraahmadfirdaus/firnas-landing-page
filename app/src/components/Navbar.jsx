@@ -27,14 +27,14 @@ const NavbarComponent = () => {
           </div>
           <div className='flex items-center w-[300px] gap-[45px]'>
             {/* <NavbarLink href="/" className='text-sm font-bold text-primary'>Login</NavbarLink> */}
-            <button className='flex items-center bg-primary hover:bg-primaryhover gap-[15px] px-[25px] py-[15px] rounded'>
+            <a className='flex items-center bg-primary hover:bg-primaryhover gap-[15px] px-[25px] py-[15px] rounded' href="https://wa.me/6289510380067">
               <p className='text-sm font-bold text-white'>JOIN US</p>
               <Image src="/icons/arrow-right.svg"
                 width="12"
                 height="10"
                 className="h-auto w-auto"
                 alt="arrow-right" />
-            </button>
+            </a>
           </div>
         </div>
       </NavbarCollapse>
