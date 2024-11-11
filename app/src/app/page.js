@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main id="landing-page">
+    <main id="landing-page" className="scroll-smooth">
       <Navbar />
       <Header />
       <Banner />

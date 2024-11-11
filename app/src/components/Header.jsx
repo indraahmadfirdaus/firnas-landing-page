@@ -1,4 +1,7 @@
+"use client"
 import Image from "next/image";
+import { useState } from "react";
+import CustomModal from "./ui/Modal";
 
 function Card({ el }) {
   const baseClass = "font-bold md:text-base text-sm";
@@ -33,6 +36,8 @@ function Card({ el }) {
 }
 
 export default function Header() {
+  const [openModal, setOpenModal] = useState(false)
+
   let cards = [
     {
       title: "Biaya Terjangkau",
@@ -57,23 +62,47 @@ export default function Header() {
   ]
   return (
     <section id="header" className="flex flex-col md:pb-[80px] md:gap-[80px] gap-[40px] md:px-0">
-      <div className="container flex flex-col justify-between gap-9 w-[90%] md:w-full ">
-        <p className="text-primary font-bold">Sekolah IT Berbasis Islami</p>
-        <p className="text-dark md:text-[58px] text-4xl font-bold max-w-lg md:leading-[80px] leading-[40px]">Firnas Technology School</p>
-        <p className="text-secondary md:text-xl leading-[30px]">Bangun keterampilan digital<br /> dan Raih Karier IT mu segera</p>
-        <div className="flex gap-2.5">
-          <a className="bg-primary px-10 py-[15px] rounded" href="https://wa.me/6289510380067">
-            <p className='text-sm font-bold text-white'>Hubungi Kami</p>
-          </a>
-          <button className="border border-1 border-primary px-10 py-[15px] rounded">
-            <p className='text-sm font-bold text-primary'>Lihat Program</p>
-          </button>
+      <div className="container flex">
+        <div className="container flex flex-col justify-between gap-9 w-[80%] md:w-full ">
+          <p className="text-primary font-bold">Sekolah IT Berbasis Islami</p>
+          <p className="text-dark md:text-[58px] text-4xl font-bold max-w-lg md:leading-[80px] leading-[40px]">Firnas Technology School</p>
+          <p className="text-secondary md:text-xl leading-[30px]">Gabunglah di <strong>FIRNAS TECH SCHOOL</strong>, tempat nilai keislaman, karakter baik, dan keterampilan IT bersinergi dengan penguasaan Bahasa Inggris dan Jepang. Siapkan anak Anda untuk masa depan yang cerah dan beragam!</p>
+          <div className="flex gap-2.5">
+            <a className="bg-primary px-10 py-[15px] rounded" href="https://wa.me/6289510380067">
+              <p className='text-sm font-bold text-white'>Hubungi Kami</p>
+            </a>
+            <a className="border border-1 border-primary px-10 py-[15px] rounded" href="#course">
+              <p className='text-sm font-bold text-primary'>Lihat Program</p>
+            </a>
+          </div>
         </div>
+        <div className="ml-auto w-100 hidden lg:block">
+          <Image
+            src={'/header.png'}
+            width={0}
+            height={0}
+            sizes="150vw"
+            alt="header"
+            style={{ width: '100%', height: 'auto', marginLeft: '4rem' }} // optional
+          />
+        </div>
+
       </div>
+
       <div className="container flex justify-between flex-col md:flex-row md:items-center gap-6  w-[90%] md:w-full ">
         {
           cards.map((el, i) => <Card el={el} key={i} />)
         }
+      </div>
+
+      <div className="fixed bottom-4 right-4 z-50">
+        <button className="bg-danger text-white rounded-full py-3 px-4 shadow-lg" onClick={() => {
+          setOpenModal(true)
+        }}>
+          PPDB 2025/2026
+        </button>
+
+        <CustomModal openModal={openModal} setOpenModal={setOpenModal} />
       </div>
     </section>
   );

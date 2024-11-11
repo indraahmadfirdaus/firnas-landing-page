@@ -14,16 +14,16 @@ const NavbarComponent = () => {
       <NavbarToggle />
       <NavbarCollapse className='grow'>
         <NavbarLink href="/" className='md:hidden'>Home</NavbarLink>
-        <NavbarLink href="/" className='md:hidden'>Tentang</NavbarLink>
-        <NavbarLink href="/" className='md:hidden'>Program</NavbarLink>
-        <NavbarLink href="/" className='md:hidden'>Kontak</NavbarLink>
+        <NavbarLink href="#banner" className='md:hidden'>Tentang</NavbarLink>
+        <NavbarLink href="#course" className='md:hidden'>Program</NavbarLink>
+        <NavbarLink href="https://wa.me/6289510380067" className='md:hidden'>Kontak</NavbarLink>
         {/* <NavbarLink href="/" className='md:hidden text-primary'>Login</NavbarLink> */}
         <div className='hidden md:flex items-center justify-between grow' id="navbar-default">
           <div className='flex items-center gap-[21px] md:flex-row flex-col'>
             <NavbarLink href="/" className='text-sm font-bold text-secondary'>Home</NavbarLink>
-            <NavbarLink href="/" className='text-sm font-bold text-secondary'>Tentang</NavbarLink>
-            <NavbarLink href="/" className='text-sm font-bold text-secondary'>Program</NavbarLink>
-            <NavbarLink href="/" className='text-sm font-bold text-secondary'>Kontak</NavbarLink>
+            <NavbarLink href="#banner" className='text-sm font-bold text-secondary'>Tentang</NavbarLink>
+            <NavbarLink href="#course" className='text-sm font-bold text-secondary'>Program</NavbarLink>
+            <NavbarLink href="https://wa.me/6289510380067" className='text-sm font-bold text-secondary'>Kontak</NavbarLink>
           </div>
           <div className='flex items-center w-[300px] gap-[45px]'>
             {/* <NavbarLink href="/" className='text-sm font-bold text-primary'>Login</NavbarLink> */}
